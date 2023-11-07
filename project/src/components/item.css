@@ -1,0 +1,54 @@
+.container-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  padding: 3rem;
+}
+.content-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 2rem;
+  gap: 3rem;
+}
+.text-item {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.special-item {
+  color: #317068; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto ao centro */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  line-height: 1.5; /* Altura da linha */
+  font-size: 50px;
+}
+.img-item {
+  object-fit: cover;
+  width: 650px;
+}
+.img-carousel {
+  width: 550px;
+}
+.description {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.description-title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+.text-description {
+  text-align: center; /* Alinhamento do texto ao centro */ /* Transforma o texto em maiúsculas */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  line-height: 1.5; /* Altura da linha */
+  font-size: 20px;
+  width: 1600px;
+  color: rgb(17, 167, 167);
+}
