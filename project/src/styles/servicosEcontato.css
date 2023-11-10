@@ -1,0 +1,66 @@
+.content-container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.border-text {
+  border-bottom: 1px dotted aqua;
+}
+.infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  gap: 2rem;
+  padding: 2rem;
+  height: 70%;
+}
+ol {
+  background-color: #00ced1;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.img-higienizacao {
+  object-fit: cover;
+  width: 31%;
+  height: 100%;
+  border: 1px solid aqua;
+  border-radius: 10px;
+}
+.img-contato {
+  object-fit: cover;
+  width: 500px;
+  border: 1px solid #00ced1;
+  border-radius: 10px;
+}
+.content-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.video {
+  object-fit: cover;
+  width: 350px;
+  border: 1px solid aqua;
+  border-radius: 10px;
+}
+.infos-imagens-loja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

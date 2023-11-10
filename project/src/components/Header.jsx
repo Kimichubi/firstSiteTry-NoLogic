@@ -1,10 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import "../Home/homeEHeader.css";
+import "../styles/homeEHeader.css";
+
+import logoImg from "../imgs/Logo.jpg";
+
 export default function Header() {
   const { pathname } = useLocation();
   function MouseOver(event) {
     event.target.style.fontSize = "30px";
-    
   }
   function MouseOut(event) {
     event.target.style.fontSize = "15px";
@@ -12,7 +14,9 @@ export default function Header() {
   return (
     <>
       <div data-aos="fade-down" data-aos-duration="1000" className="header">
-        <h1 id="logo">Lua D´Água.</h1>
+        <Link to="/">
+          <img src={logoImg} id="logo" alt="logo" />
+        </Link>
 
         <header className="header2">
           <div className="links">
@@ -41,9 +45,9 @@ export default function Header() {
               onMouseOver={MouseOver}
               onMouseOut={MouseOut}
               className={`link-button ${
-                pathname === "/layout/servicos" ? "colorzinha" : ""
+                pathname === "/servicos" ? "colorzinha" : ""
               }`}
-              to="#links"
+              to="/servicos"
             >
               Serviços
             </Link>
@@ -51,9 +55,9 @@ export default function Header() {
               onMouseOver={MouseOver}
               onMouseOut={MouseOut}
               className={`link-button ${
-                pathname === "/layout/contato" ? "colorzinha" : ""
+                pathname === "/contato" ? "colorzinha" : ""
               }`}
-              to="#links"
+              to="/contato"
             >
               Contato
             </Link>
@@ -61,9 +65,9 @@ export default function Header() {
               onMouseOver={MouseOver}
               onMouseOut={MouseOut}
               className={`link-button ${
-                pathname === "/layout/visite" ? "colorzinha" : ""
+                pathname === "/visite" ? "colorzinha" : ""
               }`}
-              to="#links"
+              to="/visite"
             >
               Visite-nos
             </Link>

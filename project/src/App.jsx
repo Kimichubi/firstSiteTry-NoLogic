@@ -1,6 +1,12 @@
 import { RouterProvider } from "react-router-dom";
-import router from "./router";
-
+import router from "./router/router";
+import { PurificadorShow } from "./context/PurificadorShow";
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <PurificadorShow>
+      <RouterProvider router={router} />
+      </PurificadorShow>
+    </>
+  );
 }

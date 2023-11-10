@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../Home/homeEHeader.css";
+import "../styles/homeEHeader.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import agua from "../imgs/agua-mulher.avif";
