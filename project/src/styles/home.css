@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Raleway&family=Roboto:wght@300&family=Satisfy&family=Splash&display=swap");
+#logo {
+  width: 100px;
+}
+.container-home {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.content-principal {
+  display: grid;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.texts {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.imgs {
+  object-fit: cover;
+  border: 1px groove rgb(4, 170, 170);
+  border-radius: 10px;
+}
+
+.imgs-content {
+  width: 625px;
+  border: 1px groove rgb(4, 170, 170);
+  border-radius: 10px;
+}
+.special {
+  color: rgb(0, 156, 156);
+  font-family: "Roboto";
+}
+
+#div-text-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: chocolate;
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Roboto";
+}
+.title-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Roboto";
+}
+.rodape-footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+.rodape {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.clientes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.clintes-group {
+  display: flex;
+}
+@media (max-width: 577px) {
+  .content {
+    width: 500px;
+  }
+  .imgs-content {
+    width: 325px;
+   
+  }
+}

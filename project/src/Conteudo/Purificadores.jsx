@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { usePurificador } from "../context/PurificadorShow";
 
 export default function Purificadores() {
-  const {purificadores} = usePurificador()
+  const { purificadores } = usePurificador();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -41,6 +41,7 @@ export default function Purificadores() {
               </div>
             );
           })}
+          <div className="quadrado">Mais produtos em breve!</div>
         </div>
       </div>
     </>

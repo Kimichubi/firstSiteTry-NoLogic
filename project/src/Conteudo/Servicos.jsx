@@ -5,6 +5,8 @@ import videoFr600Resultado from "../imgs/resultadoHigienizacao.mp4";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import "bootstrap/js/index.esm";
 export default function Servicos() {
   useEffect(() => {
     AOS.init();
@@ -12,10 +14,12 @@ export default function Servicos() {
 
   return (
     <>
-      <div data-aos="fade-up-left" className="content-container">
-        <div className="content">
+      <div data-aos="fade-up-left" className="container-fluid">
+        <div className="container-fluid">
           <h1 className="border-text">Higienização</h1>
-          <div className="infos">
+        </div>
+        <div className="container-fluid">
+          <div className="infos container-fluid">
             <ol>
               <li>
                 Remoção de Resíduos: Esvazie completamente o reservatório de
@@ -55,12 +59,9 @@ export default function Servicos() {
                 continuidade da qualidade da água.
               </li>
             </ol>
-            <img
-              className="img-higienizacao"
-              src="https://blog.superfilter.com.br/wp-content/uploads/2021/08/limpeza-higienizacao-purificador-de-agua.jpg"
-              alt=""
-            />
           </div>
+        </div>
+        <div className="container-fluid">
           <h3>
             Ao adotar essas práticas de higienização, você não apenas prolonga a
             vida útil do seu purificador ou bebedouro, mas também assegura que a
@@ -83,7 +84,12 @@ export default function Servicos() {
 
         <div className="content-videos">
           <video muted className="video" src={videoFr600} controls></video>
-          <video muted className="video" src={videoFr600Resultado} controls></video>
+          <video
+            muted
+            className="video"
+            src={videoFr600Resultado}
+            controls
+          ></video>
         </div>
       </div>
     </>

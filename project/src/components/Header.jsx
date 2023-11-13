@@ -1,79 +1,61 @@
-import { Link, useLocation } from "react-router-dom";
-import "../styles/homeEHeader.css";
-
+import { Link } from "react-router-dom";
 import logoImg from "../imgs/Logo.jpg";
 
 export default function Header() {
-  const { pathname } = useLocation();
-  function MouseOver(event) {
-    event.target.style.fontSize = "30px";
-  }
-  function MouseOut(event) {
-    event.target.style.fontSize = "15px";
-  }
   return (
     <>
-      <div data-aos="fade-down" data-aos-duration="1000" className="header">
-        <Link to="/">
-          <img src={logoImg} id="logo" alt="logo" />
-        </Link>
-
-        <header className="header2">
-          <div className="links">
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              className={`link-button ${pathname === "/" ? "colorzinha" : ""}`}
-              to="/"
-            >
-              Home
-            </Link>
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              className={`link-button ${
-                pathname === "/layout/products" ||
-                pathname === "/layout/filtros"
-                  ? "colorzinha"
-                  : ""
-              }`}
-              to="/layout/products"
-            >
-              Produtos
-            </Link>
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              className={`link-button ${
-                pathname === "/servicos" ? "colorzinha" : ""
-              }`}
-              to="/servicos"
-            >
-              Serviços
-            </Link>
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              className={`link-button ${
-                pathname === "/contato" ? "colorzinha" : ""
-              }`}
-              to="/contato"
-            >
-              Contato
-            </Link>
-            <Link
-              onMouseOver={MouseOver}
-              onMouseOut={MouseOut}
-              className={`link-button ${
-                pathname === "/visite" ? "colorzinha" : ""
-              }`}
-              to="/visite"
-            >
-              Visite-nos
-            </Link>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <Link to="/" className="navbar-brand" href="#">
+            <img id="logo" src={logoImg} alt="" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/layout/products" className="nav-link" href="#">
+                  Produtos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/servicos" className="nav-link" href="#">
+                  Serviços
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/visite" className="nav-link " aria-disabled="true">
+                  Visite-nos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contato" className="nav-link " aria-disabled="true">
+                  Contato
+                </Link>
+              </li>
+            </ul>
           </div>
-        </header>
-      </div>
+        </div>
+      </nav>
     </>
   );
 }

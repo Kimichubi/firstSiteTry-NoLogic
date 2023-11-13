@@ -1,4 +1,4 @@
-import "../styles/homeEHeader.css";
+import "../styles/home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
